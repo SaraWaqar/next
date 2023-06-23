@@ -1,4 +1,3 @@
-import React from "react";
 import { fetchAll } from "../store/test";
 // import {useDispatch, useSelector} from "react-redux"
 import { useDispatch, useSelector } from "react-redux";

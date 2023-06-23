@@ -1,3 +1,18 @@
 a{
     margin: 20px;
 }
+img.img-fluid {
+   width: 100%;
+   max-width: 200px;
+   max-height: 150px;
+   object-fit: contain;
+}
+.d-flex{
+    display: flex;
+    gap: 20px;
+    flex-flow: wrap;
+}
+.card{
+    max-width: 15%;
+    padding: 30px;
+}

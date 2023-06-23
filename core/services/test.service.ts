@@ -1,4 +1,4 @@
-import request from "../../../../../config"
+import request from "../../config"
 const Services = {
     getAll() {
         return request.get("products")

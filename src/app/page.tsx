@@ -1,7 +1,7 @@
 "use client"
 import styles from "./page.module.css";
 import { useEffect } from "react";
-import useTest from "@/components/apps/components/hooks/useTest";
+import useTest from "../../core/hooks/useTest";
 
 export default function Home() {
   const { getAll} = useTest()

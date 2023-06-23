@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { testService } from "../../services";
+import { testService } from "../../../core/services";
 
 
 interface InitialState{
@@ -16,7 +16,7 @@ export const fetchAll = createAsyncThunk("test/getAll", async () => {
   } catch (error) {
     console.log(error);
   }
-});
+}); 
 
 // Then, handle actions in your reducers:
 const Slice = createSlice({
@@ -29,7 +29,7 @@ const Slice = createSlice({
   extraReducers: (builder) => {
     builder.addCase(
         fetchAll.fulfilled, (state, action) =>{
-            console.log("actionplaylod", action.payload);
+            console.log("action playlod", action.payload);
             state.entities =  action.payload
         } 
     )
